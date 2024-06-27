@@ -1,0 +1,160 @@
+.linkqcc {
+    display: block;
+    background-color: lightcoral;
+    padding: 15px 50px;
+    width: 80px;
+    margin: 20px 0px;
+    color: blue;
+}
+
+.colorcontainer{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border: solid 2px black;
+    padding: 30px;
+}
+
+/* --------- EVENT OBJECTS IN KEY EVENT ----------- */
+
+.btnpressme{
+    padding: 20px 50px;
+    background-color: black;
+    color: skyblue;
+    border-radius: 12px;
+}
+
+.btnpressme:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+
+.btnactive{
+    background-color: RED;
+    font-size: 15px;
+}
+
+/* remove an iteam from a list */
+#listfruits li {
+    padding: 12px 30px;
+    width: 200px;
+    border: 1px solid green;
+    list-style: none;
+}
+
+#listfruits li:hover{
+    background-color: indigo;
+    cursor: pointer;
+}
+
+/* SCROLL EVENT */
+#content {
+    background-color: khaki;
+    width: 1000px;
+    padding: 20px;
+}
+
+/* SLICE PHOTO GALLERY */
+.maincontainer, .gallerycontainer{
+    width: 1000px;
+    margin: auto;
+}
+.maincontainer{
+    position: relative;
+    z-index: 0;
+}
+.gallerycontainer{
+    position: relative;
+    z-index: 1;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.galleryimage{
+    display: inline-block;
+    width: 500px;
+}
+
+.btnleft, .btnright{
+    position: absolute;
+    z-index: 2;
+    background-color: lawngreen;
+    border: none;
+    font-size: 30px;
+    opacity: 0.6;
+    top: 150px;
+}
+.btnleft:hover, .btnright:hover{
+    opacity: 2;
+}
+.btnright{
+    right: 20px;
+}
+.btnleft{
+    left: 20px;
+}
+
+/* GOTOP */
+html{scroll-behavior: smooth;}
+.gotop{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    text-align: center;
+    background-color: lemonchiffon;
+    transition: ease-in-out 200ms;
+    display: none;
+}
+.gotop a{
+    text-decoration: none;
+    color: black;
+}
+.gotop:hover{
+    background-color: olive;
+    box-shadow: 0px 0px 5px 2px;
+
+}
+
+
+/* THURSDAY JUNE 20TH CSS */
+/* Username and Password attributes and Validation */
+.greeting{
+    display: none;
+}
+
+#myform{
+background-color: blanchedalmond;
+box-shadow: 1px 0px 3px blue;
+border-radius: 10px;
+width: 600px;
+margin: 50px auto;
+padding: 20px;
+}
+.controlblock{
+    margin-bottom: 20px;
+}
+.passwordmsg{
+    color: grey;
+    margin-top: -1px;
+}
+.passworderror{
+    color: red;
+}
+.submitbtn{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    transition: ease-in-out 300ms;
+    color: chartreuse;
+}
+.submitbtn:hover{
+    transform: translateY(5px);
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0px -2px 3px gray;
+}
